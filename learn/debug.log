@@ -7,3 +7,7 @@
 [1210/132606:INFO:CONSOLE(35)] "11", source: http://127.0.0.1:8020/learn/e_javascript/2.html (35)
 [1210/132611:INFO:CONSOLE(35)] "11", source: http://127.0.0.1:8020/learn/e_javascript/2.html (35)
 [1210/132634:INFO:CONSOLE(36)] "11", source: http://127.0.0.1:8020/learn/e_javascript/2.html (36)
+[1210/133257:INFO:CONSOLE(2)] "Uncaught ReferenceError: myFunction is not defined", source: http://127.0.0.1:8020/learn/e_javascript/js/3.js (2)
+[1210/133302:INFO:CONSOLE(6)] "Uncaught ReferenceError: myFunction is not defined", source: http://127.0.0.1:8020/learn/e_javascript/js/3.js (6)
+[1210/133703:INFO:CONSOLE(21)] "Uncaught SyntaxError: Unexpected token (", source: http://127.0.0.1:8020/learn/e_javascript/js/3.js (21)
+[1210/133703:INFO:CONSOLE(12)] "Uncaught ReferenceError: main is not defined", source: http://127.0.0.1:8020/learn/e_javascript/3.html (12)
