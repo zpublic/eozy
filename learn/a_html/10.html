@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<body>
+		<form action="">
+			First name:
+			<input type="text" name="firstname">
+			<br> Last name:
+			<input type="text" name="lastname">
+		</form>
+		<p><b>Note:</b> The form itself is not visible. Also note that the default width of a text field is 20 characters.</p>
+		<br />
+		<br />
+
+		<form action="">
+			<input type="radio" name="sex" value="male">Male
+			<br>
+			<input type="radio" name="sex" value="female">Female
+		</form>
+		<p><b>Note:</b> When a user clicks on a radio-button, it becomes checked, and all other radio-buttons with equal name become unchecked.</p>
+		<br />
+		<br />
+
+		<form action="">
+			<input type="checkbox" name="vehicle" value="Bike">I have a bike
+			<br>
+			<input type="checkbox" name="vehicle" value="Car">I have a car
+		</form>
+		<br />
+		<br />
+
+		<form action="">
+			<select name="cars">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			</select>
+		</form>
+		<form action="">
+			<select name="cars">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="fiat" selected>Fiat</option>
+				<option value="audi">Audi</option>
+			</select>
+		</form>
+		<br />
+		<br />
+
+		<textarea rows="10" cols="30">我是一个文本框。</textarea>
+		<form action="">
+			<input type="button" value="Hello world!">
+		</form>
+		<br />
+		<br />
+
+		<form action="">
+			<fieldset>
+				<legend>Personal information:</legend>
+				Name:
+				<input type="text" size="30">
+				<br> E-mail:
+				<input type="text" size="30">
+				<br> Date of birth:
+				<input type="text" size="10">
+			</fieldset>
+		</form>
+		<br />
+		<br />
+
+		<form action="demo-form.php">
+			First name:
+			<input type="text" name="FirstName" value="Mickey">
+			<br> Last name:
+			<input type="text" name="LastName" value="Mouse">
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+		<p>Click the "Submit" button and the form-data will be sent to a page on the server called &quot;demo-form.php&quot;.</p>
+		<br />
+		<br />
+
+		<form action="demo-form.php" method="get">
+			<input type="checkbox" name="vehicle" value="Bike"> I have a bike
+			<br>
+			<input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+		<form action="demo-form.php" method="get">
+			<input type="radio" name="sex" value="Male"> Male
+			<br>
+			<input type="radio" name="sex" value="Female" checked="checked"> Female
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+		<br />
+		<br />
+
+		<h3>Send e-mail to someone@example.com:</h3>
+		<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+			Name:
+			<br>
+			<input type="text" name="name" value="your name">
+			<br> E-mail:
+			<br>
+			<input type="text" name="mail" value="your email">
+			<br> Comment:
+			<br>
+			<input type="text" name="comment" value="your comment" size="50">
+			<br>
+			<br>
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
+		</form>
+		<br />
+		<br />
+	</body>
+
+</html>
