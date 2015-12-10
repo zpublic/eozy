@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function myFunction() {
+				document.getElementById("demo").innerHTML = "我的第1个 JavaScript 函数";
+			}
+		</script>
+	</head>
+
+	<body>
+		<script>
+			document.write("<h1>这是一个标题</h1>");
+			document.write("<p>这是一个段落</p>");
+		</script>
+
+		<p id="demo">一个段落</p>
+		<button type="button" onclick="myFunction()">尝试一下</button>
+
+		<script>
+			function myFunction2() {
+				document.getElementById("demo2").innerHTML = "我的第2个 JavaScript 函数";
+			}
+		</script>
+		<p id="demo2">一个段落</p>
+		<button type="button" onclick="myFunction2()">尝试一下</button>
+		
+		<script src="js/1.js"></script>
+		<p id="demo3">一个段落</p>
+		<button type="button" onclick="myFunction3()">尝试一下</button>
+	</body>
+
+</html>
