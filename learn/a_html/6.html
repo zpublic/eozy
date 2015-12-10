@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+	<body>
+		<p> An image:
+			<img src="../public/img/wn8.png" width="32" height="32"></p>
+
+		<p> A moving image:
+			<img src="../public/img/1.gif" width="48" height="48"></p>
+
+		<img src="notexist.gif" alt="no image" width="33" height="32">
+
+		<h4>Image with default alignment (align="bottom"):</h4>
+		<p>This is some text. <img src="../public/img/1.gif" alt="Smiley face" width="32" height="32"> This is some text.</p>
+
+		<h4>Image with align="middle":</h4>
+		<p>This is some text. <img src="../public/img/1.gif" alt="Smiley face" align="middle" width="32" height="32"> This is some text.</p>
+
+		<h4>Image with align="top":</h4>
+		<p>This is some text. <img src="../public/img/1.gif" alt="Smiley face" align="top" width="32" height="32"> This is some text.</p>
+
+		<p><b>Note:</b> The align attribute is deprecated in HTML 4, and is not supported in HTML5. Use CSS instead.</p>
+
+		<p>
+			<img src="../public/img/1.gif" alt="Smiley face" style="float:left" width="32" height="32"> A paragraph with an image. The image will float to the left of this text.
+		</p>
+
+		<p>
+			<img src="../public/img/1.gif" alt="Smiley face" style="float:right" width="32" height="32"> A paragraph with an image. The image will float to the right of this text.
+		</p>
+
+		<p><b>Note:</b> Here we have used the CSS "float" property to align the image; as the align attribute is deprecated in HTML 4, and is not supported in HTML5.</p>
+
+		<p>创建图片链接:
+			<a href="http://www.laorouji.com">
+				<img src="../public/img/1.gif" alt="HTML 教程" width="32" height="32"></a>
+		</p>
+
+		<p>无边框的图片链接:
+			<a href="http://www.laorouji.com">
+				<img border="0" src="../public/img/1.gif" alt="HTML 教程" width="32" height="32"></a>
+		</p>
+
+		<p>图片区域响应：</p>
+		<img src="../public/img/wn8.png" width="145" height="126" alt="Planets" usemap="#planetmap">
+		<map name="planetmap">
+			<area shape="rect" coords="0,0,82,126" alt="Sun" href="1.html">
+			<area shape="circle" coords="90,58,3" alt="Mercury" href="2.html">
+			<area shape="circle" coords="124,58,8" alt="Venus" href="3.html">
+		</map>
+	</body>
+
+</html>
