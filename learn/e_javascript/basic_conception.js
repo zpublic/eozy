@@ -1,7 +1,7 @@
-//annotation:
+//单行注释:
 /*
 * ...
-* annotations
+* 多行注释
 * ...
 */
 
@@ -26,6 +26,9 @@ function TypePart()
 {
 	TypeOfPart();
 	NumberPart();
+	StringPart();
+
+// Boolean
 
 	d_println("null == undefined");
 	d_print(null == undefined); // true
@@ -65,6 +68,8 @@ function TypeOfPart()
 	var v5 = null; 
 	var v6 = {}; 
 	var v7 = function() { return 42 }; 
+
+//typeof
 
 	d_println("typeof(v1)");
 	d_print(typeof(v1)); // "undefined"
@@ -117,5 +122,74 @@ function NumberPart()
 	d_println("isFinite(Number.MAX_VALUE + Number.MAX_VALUE)");
 	d_print(isFinite(r)); // false;
 
-	var n = 1 / 0; // NaN(not a number)
+//NaN
+	d_println("isNaN(1 / 0)");
+	d_print(isNaN(1 / 0)); // true
+	
+	d_println("isNaN(NaN)");
+	d_print(isNaN(NaN)); // true
+	
+	d_println("isNaN(10)");
+	d_print(isNaN(10)); // false
+	
+	d_println("isNaN(\"10)\"");
+	d_print(isNaN("10")); // false
+	
+	d_println("isNaN(\"cozy\")");
+	d_print(isNaN("cozy")); // true
+	
+	d_println("isNaN(true)");
+	d_print(isNaN(true)); // false
+	
+	
+// number convert
+
+	d_println("Number(\"Hello world\")");
+	d_print(Number("Hello world")); // false
+	
+	d_println("Number(\"\")");
+	d_print(Number("")); // 0
+	
+	d_println("Number(\"000011\")");
+	d_print(Number("000011")); // 11
+	
+	d_println("Number(true)");
+	d_print(Number(true)); // 1
+	
+// parser int
+	d_println("parseInt(\"1234cozy\")");
+	d_print(parseInt("1234cozy")); // 1234
+	
+	d_println("parseInt(\"\")");
+	d_print(parseInt("")); // NaN
+	
+	d_println("parseInt(\"0xA\")");
+	d_print(parseInt("0xA")); // 10 hex
+	
+	d_println("parseInt(22.5)");
+	d_print(parseInt(22.5)); // 22
+	
+	d_println("parseInt(\"070\")");
+	d_print(parseInt("070")); // 56 oct
+	
+	d_println("parseInt(\"70\")");
+	d_print(parseInt("70")); // 70 
+	
+	d_println("parseInt(\"10\", 2)");
+	d_print(parseInt("10", 2)); // 15 hex
+	
+	d_println("parseInt(\"10\", 8)");
+	d_print(parseInt("10", 8)); // 15 hex
+	
+	d_println("parseInt(\"10\", 10)");
+	d_print(parseInt("10", 10)); // 15 hex
+	
+	d_println("parseInt(\"10\", 16)");
+	d_print(parseInt("10", 16)); // 15 hex
+	
+}
+
+function StringPart()
+{
+	
 }
