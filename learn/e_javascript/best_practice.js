@@ -1,0 +1,4 @@
+function best_practice()
+{
+	
+}

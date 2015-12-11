@@ -1,0 +1,4 @@
+function client_detection()
+{
+	
+}

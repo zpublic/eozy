@@ -5,6 +5,14 @@
 * ...
 */
 
+
+function basic_conception()
+{
+	d_print("<b>basic_conception</b>");
+	VariablePart();
+	TypePart();
+}
+
 function VariablePart()
 {
     var v1 = 42; // local
@@ -19,32 +27,32 @@ function TypePart()
 	TypeOfPart();
 	NumberPart();
 
-	document.write(null == undefined); // true
-	document.write("<br>");
+	d_println("null == undefined");
+	d_print(null == undefined); // true
 
-	document.write(Boolean("not empty")); // true
-	document.write("<br>");
+	d_println("Boolean(\"not empty\")");
+	d_print(Boolean("not empty")); // true
 
-	document.write(Boolean("")); // false
-	document.write("<br>");
+	d_println("Boolean(\"\")");
+	d_print(Boolean("")); // false
 
-	document.write(Boolean(123)); // true
-	document.write("<br>");
+	d_println("Boolean(123)");
+	d_print(Boolean(123)); // true
 
-	document.write(Boolean(0)); //false
-	document.write("<br>");
+	d_println("Boolean(0)");
+	d_print(Boolean(0)); //false
 
-	document.write(Boolean(NaN)); // false
-	document.write("<br>");
+	d_println("Boolean(NaN)");
+	d_print(Boolean(NaN)); // false
 
-	document.write(Boolean({})); // true
-	document.write("<br>");
+	d_println("Boolean({})");
+	d_print(Boolean({})); // true
 
-	document.write(Boolean(null)); // false
-	document.write("<br>");
+	d_println("Boolean(null)");
+	d_print(Boolean(null)); // false
 
-	document.write(Boolean(undefined)); // false;
-	document.write("<br>");
+	d_println("Boolean(undefined)");
+	d_print(Boolean(undefined)); // false;
 }
 
 function TypeOfPart()
@@ -58,26 +66,26 @@ function TypeOfPart()
 	var v6 = {}; 
 	var v7 = function() { return 42 }; 
 
-	document.write(typeof(v1)); // "undefined"
-	document.write("<br>");
+	d_println("typeof(v1)");
+	d_print(typeof(v1)); // "undefined"
 
-	document.write(typeof(v2)); // "boolean"
-	document.write("<br>");
+	d_println("typeof(v2)");
+	d_print(typeof(v2)); // "boolean"
 
-	document.write(typeof(v3)); // "string"
-	document.write("<br>");
+	d_println("typeof(v3)");
+	d_print(typeof(v3)); // "string"
+	
+	d_println("typeof(v4)");
+	d_print(typeof(v4)); // "number"
 
-	document.write(typeof(v4)); // "number"
-	document.write("<br>");
+	d_println("typeof(v5)");
+	d_print(typeof(v5)); // "object"
 
-	document.write(typeof(v5)); // "object"
-	document.write("<br>");
+	d_println("typeof(v6)");
+	d_print(typeof(v6)); // "object"
 
-	document.write(typeof(v6)); // "object"
-	document.write("<br>");
-
-	document.write(typeof(v7)); // "function"
-	document.write("<br>");
+	d_println("typeof(v7)");
+	d_print(typeof(v7)); // "function"
 }
 
 function NumberPart()
@@ -99,21 +107,15 @@ function NumberPart()
 
 	var f6 = 3.125e7; // 31250000
 
-	document.write(Number.MIN_VALUE);
-	document.write("<br>");
+	d_println("Number.MIN_VALUE");
+	d_print(Number.MIN_VALUE);
 
-	document.write(Number.MAX_VALUE);
-	document.write("<br>");
+	d_println("Number.MAX_VALUE");
+	d_print(Number.MAX_VALUE);
 
 	var r = Number.MAX_VALUE + Number.MAX_VALUE; //Infinity
-	document.write(isFinite(r)); // false;
-	document.write("<br>");
+	d_println("isFinite(Number.MAX_VALUE + Number.MAX_VALUE)");
+	d_print(isFinite(r)); // false;
 
 	var n = 1 / 0; // NaN(not a number)
-}
-
-function basic_conception()
-{
-	VariablePart();
-	TypePart();
 }
