@@ -93,5 +93,7 @@ function ScopePart()
 
 function GCPart()
 {
-	
+	// 手动调用GC
+	//window.CollectGarbage();
+	//window.opera.collect();
 }
