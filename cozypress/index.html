@@ -5,32 +5,171 @@
 		<meta charset="UTF-8" />
 		<title>CozyPress</title>
 		<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/8.5/styles/monokai_sublime.min.css">
+		<link href="//cdn.bootcss.com/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://www.ghostchina.com/assets/css/screen.css?v=4221e47762" />
 	</head>
 
 	<body>
-		<div class="container">
-			<h1 class="text-center">
-				Cozy博客
-			</h1>
-			<p class="text-center">
-				这是一套酷炫的博客.
-			</p>
-			<div class="row">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4">
-					<h3>第一篇文章</h3>
-					<p>就是这么屌</p>
-					<p>
-						<a class="btn" href="#">查看更多 »</a>
-					</p>
-				</div>
-				<div class="col-md-4">
+		<header class="main-header" style="background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg)">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+
+						<!-- start logo -->
+						<a class="branding" href="http://www.ghostchina.com" title="Ghost 开源博客平台"><img src="http://static.ghostchina.com/image/b/46/4f5566c1f7bc28b3f7ac1fada8abe.png" alt="Ghost 开源博客平台"></a>
+						<!-- end logo -->
+						<h2 class="text-hide">Ghost 是一个简洁、强大的写作平台。你只须专注于用文字表达你的想法就好，其余的事情就让 Ghost 来帮你处理吧。</h2>
+
+						<img src="http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg" alt="Ghost 博客系统" class="hide">
+					</div>
 				</div>
 			</div>
-		</div>
+		</header>
+
+		<nav class="main-navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="navbar-header">
+							<span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+							<i class="fa fa-bars"></i>
+							</span>
+						</div>
+						<div class="collapse navbar-collapse" id="main-menu">
+							<ul class="menu">
+								<li class="nav-current" role="presentation"><a href="/">首页</a></li>
+								<li role="presentation"><a href="http://wenda.ghostchina.com">论坛</a></li>
+								<li role="presentation"><a href="/ghost-cheat-sheet/">快捷手册</a></li>
+								<li role="presentation"><a href="http://docs.ghostchina.com/zh/">中文文档</a></li>
+								<li role="presentation"><a href="/download/">下载</a></li>
+								<li role="presentation"><a href="/about/">关于</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="content-wrap">
+			<div class="container">
+				<div class="row">
+
+					<main class="col-md-8 main-content">
+
+						<article id=92 class="post tag-about-ghost tag-release tag-ghost-0-7-ban-ben">
+
+							<div class="post-head">
+								<h1 class="post-title"><a href="/ghost-0-7-0-released/">Ghost 0.7.0 正式发布</a></h1>
+								<div class="post-meta">
+									<span class="author">作者：<a href="/author/wangsai/">王赛</a></span> &bull;
+									<time class="post-date" datetime="2015年9月7日星期一凌晨4点31分" title="2015年9月7日星期一凌晨4点31分">2015年9月7日</time>
+								</div>
+							</div>
+							<div class="post-content">
+								<p>Ghost 0.7.0 已经正式发布了！此版本主要对后台 UI 的重构，既包含重新设计，也包含底层功能的重大改进。0.7.0 还为即将到来的 API 做了很多铺垫工作。 Ghost 0.7.0 的主要改进 [新增] 设计新后台界面 [新增] 后台能够搜索博文和用户 [新增] 安</p>
+							</div>
+							<div class="post-permalink">
+								<a href="/ghost-0-7-0-released/" class="btn btn-default">阅读全文</a>
+							</div>
+
+							<footer class="post-footer clearfix">
+								<div class="pull-left tag-list">
+									<i class="fa fa-folder-open-o"></i>
+									<a href="/tag/about-ghost/">Ghost</a>, <a href="/tag/release/">新版本发布</a>, <a href="/tag/ghost-0-7-ban-ben/">Ghost 0.7 版本</a>
+								</div>
+								<div class="pull-right share">
+								</div>
+							</footer>
+						</article>
+						<article id=91 class="post tag-about-ghost tag-zhu-shou-han-shu tag-jquery">
+
+							<div class="post-head">
+								<h1 class="post-title"><a href="/no-more-jquery-in-ghost_foot-helper-of-ghost-0-7/">Ghost 0.7 中 {{ghost_foot}} 助手函数将不再输出 jQuery</a></h1>
+								<div class="post-meta">
+									<span class="author">作者：<a href="/author/wangsai/">王赛</a></span> &bull;
+									<time class="post-date" datetime="2015年8月29日星期六下午3点17分" title="2015年8月29日星期六下午3点17分">2015年8月29日</time>
+								</div>
+							</div>
+							<div class="post-content">
+								<p>{{ghost_foot}} 助手函数将不再输出 jQuery 链接了。 从 Ghost 第一个版本开始， {{ghost_foot}} 助手函数默认都会输出一个 jQuery 文件链接，并且这个文件还是本地存储的。最开始 Ghost 团队觉得这是一件对所有主题开发者有意义</p>
+							</div>
+							<div class="post-permalink">
+								<a href="/no-more-jquery-in-ghost_foot-helper-of-ghost-0-7/" class="btn btn-default">阅读全文</a>
+							</div>
+
+							<footer class="post-footer clearfix">
+								<div class="pull-left tag-list">
+									<i class="fa fa-folder-open-o"></i>
+									<a href="/tag/about-ghost/">Ghost</a>, <a href="/tag/zhu-shou-han-shu/">助手函数</a>, <a href="/tag/jquery/">jQuery</a>
+								</div>
+								<div class="pull-right share">
+								</div>
+							</footer>
+						</article>
+						<nav class="pagination" role="navigation">
+							<span class="page-number">第 1 页 &frasl; 共 8 页</span>
+							<a class="older-posts" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+						</nav>
+					</main>
+
+					<aside class="col-md-4 sidebar">
+						<!-- start widget -->
+						<!-- end widget -->
+
+						<!-- start tag cloud widget -->
+						<div class="widget">
+							<h4 class="title">社区</h4>
+							<div class="content community">
+								<p>QQ群：277327792</p>
+								<p><a href="http://wenda.ghostchina.com/" title="Ghost中文网问答社区" target="_blank" onclick="_hmt.push(['_trackEvent', 'big-button', 'click', '问答社区'])"><i class="fa fa-comments"></i> 问答社区</a></p>
+								<p><a href="http://weibo.com/ghostchinacom" title="Ghost中文网官方微博" target="_blank" onclick="_hmt.push(['_trackEvent', 'big-button', 'click', '官方微博'])"><i class="fa fa-weibo"></i> 官方微博</a></p>
+							</div>
+						</div>
+						<!-- end tag cloud widget -->
+
+						<!-- start widget -->
+						<div class="widget">
+							<h4 class="title">下载 Ghost</h4>
+							<div class="content download">
+								<a href="/download/" class="btn btn-default btn-block" onclick="_hmt.push(['_trackEvent', 'big-button', 'click', '下载Ghost'])">Ghost 中文版（0.6.0）</a>
+							</div>
+						</div>
+						<!-- end widget -->
+
+						<!-- start tag cloud widget -->
+						<div class="widget">
+							<h4 class="title">标签云</h4>
+							<div class="content tag-cloud">
+								<a href="/tag/about-ghost/">Ghost</a>
+								<a href="/tag/release/">新版本发布</a>
+								<a href="/tag/javascript/">JavaScript</a>
+								<a href="/tag/promise/">Promise</a>
+								<a href="/tag/zhuti/">主题</a>
+								<a href="/tag/mysql/">MySQL</a>
+								<a href="/tag/nodejs/">Node.js</a>
+								<a href="/tag/ghost-in-depth/">深度玩转 Ghost</a>
+								<a href="/tag/ubuntu/">Ubuntu</a>
+								<a href="/tag/aliyun-ecs/">阿里云服务器</a>
+								<a href="/tag/nginx/">Nginx</a>
+								<a href="/tag/bae/">BAE</a>
+								<a href="/tag/theme/">Theme</a>
+								<a href="/tag/ghost-0-7-ban-ben/">Ghost 0.7 版本</a>
+								<a href="/tag/zhu-shou-han-shu/">助手函数</a>
+								<a href="/tag/customize-page/">自定义页面</a>
+								<a href="/tag/static-page/">静态页面</a>
+								<a href="/tag/upload/">上传</a>
+								<a href="/tag-cloud/">...</a>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
 	</body>
 
 </html>
